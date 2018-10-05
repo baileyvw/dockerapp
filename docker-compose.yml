@@ -1,3 +1,4 @@
+# the version number below depends on you version of docke.
 version: "3.0"
 services:
   dockerapp:
@@ -7,4 +8,5 @@ services:
     depends_on:
       - redis
   redis:
-    image: redis:3.2.0
+    image: redis
+#    image: redis:3.2.0

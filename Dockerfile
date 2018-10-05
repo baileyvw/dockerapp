@@ -1,5 +1,7 @@
-FROM python:3.5
-RUN pip install Flask==0.11.1 redis==2.10.5
+FROM python
+#FROM python:3.5
+RUN pip install Flask==0.11.1 redis
+#RUN pip install Flask==0.11.1 redis==2.10.5
 RUN useradd -ms /bin/bash admin
 USER admin
 COPY app /app
